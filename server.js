@@ -9,9 +9,9 @@ const upload = multer({ storage: multer.memoryStorage() });
 const app = express();
 
 const allowedOrigins = [
-  'http://localhost:3000',
+  'https://babayaroupdated.netlify.app',
   'http://localhost:5000',
-  process.env.FRONTEND_URL || 'http://localhost:3000',
+  process.env.FRONTEND_URL || 'https://babayaroupdated.netlify.app',
 ];
 
 app.use(cors({
